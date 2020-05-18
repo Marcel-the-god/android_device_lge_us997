@@ -26,7 +26,7 @@ $(call inherit-product-if-exists, vendor/lge/us997/us997-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # common g6
-$(call inherit-product, device/lge/g6-common/g6.mk)
+$(call inherit-product, device/lge/msm8996-common/msm8996.mk)
 
 # Sensors
 PRODUCT_COPY_FILES += \
