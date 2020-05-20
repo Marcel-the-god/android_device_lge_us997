@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_us997.mk
+    $(LOCAL_DIR)/aicp_us997.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_us997-user \
-    lineage_us997-userdebug \
-    lineage_us997-eng
+    aicp_us997-user \
+    aicp_us997-userdebug \
+    aicp_us997-eng
