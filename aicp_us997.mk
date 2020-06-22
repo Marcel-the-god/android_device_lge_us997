@@ -36,9 +36,10 @@ PRODUCT_MODEL := LG-US997
 PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Marcel (@LG_SUCKS)" \
     TARGET_DEVICE="lucye" \
     PRODUCT_DEVICE="lucye" \
     PRODUCT_NAME="lucye_nao_us" \
     PRIVATE_BUILD_DESC="lucye_nao_us-user 8.0.0 OPR1.170623.032 190420940e75c release-keys"
 
-BUILD_FINGERPRINT := "lge/lucye_nao_us/lucye:8.0.0/OPR1.170623.032/190420940e75c:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
