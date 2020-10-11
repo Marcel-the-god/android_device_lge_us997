@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_us997.mk
+    $(LOCAL_DIR)/rr_us997.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_us997-user \
-    aicp_us997-userdebug \
-    aicp_us997-eng
+    rr_us997-user \
+    rr_us997-userdebug \
+    rr_us997-eng

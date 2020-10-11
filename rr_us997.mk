@@ -18,28 +18,29 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common RR stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
-#Bootaniumation
+#Bootaniumation and other stuff
 TARGET_SCREEN_HEIGHT := 2880
 TARGET_SCREEN_WIDTH := 1440
+TARGET_FACE_UNLOCK_SUPPORTED := true
+RR_BUILDTYPE := Unofficial
 
 # Inherit from us997 device
 $(call inherit-product, device/lge/us997/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := us997
-PRODUCT_NAME := aicp_us997
+PRODUCT_NAME := rr_us997
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-US997
 PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Marcel (@LG_SUCKS)" \
     TARGET_DEVICE="lucye" \
     PRODUCT_DEVICE="lucye" \
     PRODUCT_NAME="lucye_nao_us" \
     PRIVATE_BUILD_DESC="lucye_nao_us-user 8.0.0 OPR1.170623.032 190420940e75c release-keys"
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys"
